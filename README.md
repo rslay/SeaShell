@@ -1,7 +1,7 @@
 SeaShell
 ========
 
-A cross-platform shell with extra capabilities, without needing a custom agent like meterpreter. Still a work in progress.
+A cross-platform shell handler alternative to msfconsole that comes with extra capabilities, without needing a custom agent like meterpreter. Still a work in progress.
 
 Compiles in Linux, Windows sockets still in the works.
 
