@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+		"ncurses_cfg.h": "c",
+		"curses.h": "c",
+		"stdint.h": "c",
+		"io.h": "c",
+		"iostream": "c",
+		"panel.h": "c",
+		"functional": "cpp",
+		"winsock2.h": "c",
+		"network.h": "c"
+	}
+}

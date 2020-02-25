@@ -1,0 +1,66 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "buildLinux",
+			"command": "gcc",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"args": [
+				"-Wall",
+				"-lncurses",
+				"-o",
+				"build/linux/SeaShell",
+				"src/main.c",
+				"src/network.c",
+			],
+			"problemMatcher": {
+				"owner": "c",
+				"fileLocation": [
+					"relative",
+					"${workspaceFolder}"
+				],
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		},
+		{
+			"label": "buildWindows",
+			"command": "gcc",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"args": [
+				"-Wall",
+				"-o",
+				"build/windows/SeaShell.exe",
+				"src/main.c",
+				"lib/pdcurses.dll",
+				"src/network.c",
+			],
+			// "args": ["-lssl", "-lcrypto", "-g", "main.c", "-o", "main.exe"],
+			"problemMatcher": {
+				"owner": "c",
+				"fileLocation": [
+					"relative",
+					"${workspaceFolder}"
+				],
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		}
+	]
+}
