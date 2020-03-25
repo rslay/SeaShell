@@ -9,11 +9,11 @@
 			},
 			"args": [
 				"-Wall",
-				"-lncurses",
 				"-o",
 				"build/linux/SeaShell",
 				"src/main.c",
 				"src/network.c",
+				"-lncurses",
 			],
 			"problemMatcher": {
 				"owner": "c",
@@ -44,6 +44,7 @@
 				"src/main.c",
 				"lib/pdcurses.dll",
 				"src/network.c",
+				"-lws2_32",
 			],
 			// "args": ["-lssl", "-lcrypto", "-g", "main.c", "-o", "main.exe"],
 			"problemMatcher": {

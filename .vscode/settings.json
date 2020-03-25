@@ -8,6 +8,10 @@
 		"panel.h": "c",
 		"functional": "cpp",
 		"winsock2.h": "c",
-		"network.h": "c"
+		"network.h": "c",
+		"strings.h": "c",
+		"stdio.h": "c",
+		"fcntl.h": "c",
+		"unistd.h": "c"
 	}
 }

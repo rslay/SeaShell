@@ -22,10 +22,10 @@
 #define KBD_ENTER 10
 #define KBD_BACKSPACE 127
 
+#endif
+
 /* Include custom headers */
 #include "../include/network.h"
-
-#endif
 
 /* Define application constants */
 // Max default scrollback
@@ -40,6 +40,7 @@ char *cmd = NULL;
 size_t cmdLen = 0;
 
 // I/O buffer used in displaying text
+// Linked List with two string arrays inside itself
 struct buffer
 {
 	char **input;
@@ -279,7 +280,7 @@ int main()
 		if (strcmp(cmd, "connect") == 0)
 		{
 			// Attempt connection
-			char *res = malloc(256);
+			char* res = malloc(256);
 			int sockStat = create_socket("127.0.0.1", 4444, res);
 			if (sockStat != 0)
 			{
